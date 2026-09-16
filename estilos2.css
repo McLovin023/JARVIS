@@ -1,3 +1,9 @@
+.electrolize-regular {
+  font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .logo{
     width: 300px;
     height: 170px;
@@ -64,7 +70,84 @@ margin: 50px;
   min-height: 390px;
   }
 
+body{
+    text-align: center;
+}
   .primera_seccion{
-    
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    min-height: 390px;
+    /* background-color: rgb(26, 27, 27); */
+    border-bottom: 5px solid #ccc;
+    padding-bottom: 10px;
+    background-image: url("imagenes/Gemini_Generated_Image_jak6g8jak6g8jak6.jpg");
+    background-size: cover;
+    background-position: center;
+
   }
-  
+h1{
+    font-family: 'Audiowide', cursive;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+#titulo_inicial{
+    font-family: 'Audiowide', cursive;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+ol{
+    list-style: none;
+}
+
+.container_blur{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    z-index: 1;
+}
+/* Capa superior: todo el texto y cuadros */
+.contenido {
+  position: relative;
+  z-index: 2; /* Nivel 2 (por encima del blur) */
+}
+.funciones{
+    border: #3dcff3 2px solid;
+    background-color: white; 
+    border-radius: 10px;
+    gap: 25px   ;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: 0.3s;
+    
+}
+.funciones:hover{
+    background-color: #3dcff3;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+p,li{
+    font-family: 'Electrolize', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+

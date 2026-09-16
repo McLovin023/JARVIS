@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Honk:MORF@15&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/jpg" href="imagenes/gemini_generated_image_5322175322175322-removebg-preview.png">
     <script src="script.js">tempertura</script>
@@ -27,31 +30,48 @@
         </nav>
 </div>
 <h1>PROYECTO VIERNES CASA DOMOTICA inteligente</h1>
+<div class="container_blur"></div>
 <section class="primera_seccion">
-<ol>Nuestra idea</ol>
-<h2>¿Que queremos construir?</h2>
-    <p>Queremos construir una casa domotica inteligente controlada mendiante un celular y conectada por Wi-Fi a una ESP32</p>
-    <p>la casa tendra diferentes componentes que permitan controlar y monitorear algunas funciones:</p>
-    <li>
-        <ol>💡 Encender y apagar luces.</ol>
-            <button> ON/OFF </button>
-            <label for="brillo">Intensidad:</label>
-            <input type="range" id="brillo" min="0" max="100" value="50">
-        <ol>🚪 Abrir y cerrar una puerta.</ol>
-            <button> ABRIR/CERRAR</button>
-        <ol>☀️ Detectar la cantidad de luz ambiental.</ol>    
-            <div>
-                <p>Estado: <strong>Soleado / Iluminado</strong></p>
-                <p>Lectura del sensor: <span>450 Lux</span></p>
-            </div>
-        <ol>💧 Medir la humedad.</ol>
-            <div>
-                <p>Estado: <strong>Humedo / Seco</strong></p>
-                <p>Lectura del sensor: <span>100%</span></p>
-            </div>
-        <ol>📱 Controlar el sistema desde un celular.</ol>
-            <i class="fa-slab-duo fa-regular fa-wifi"></i>
-            <p>En linea conectado</p>
-
-    </li>
+<div class="contenido">
+            <ol id="titulo_inicial">Nuestra idea</ol>
+    <h2>¿Que queremos construir?</h2>
+        <p>Queremos construir una casa domotica inteligente controlada mendiante un celular y conectada por Wi-Fi a una ESP32</p>
+        <p>la casa tendra diferentes componentes que permitan controlar y monitorear algunas funciones:</p>
+        <ol>
+            <li class="funciones">💡 Encender y apagar luces.
+                <button> ON/OFF </button>
+                <label for="brillo">Intensidad:</label>
+                <input type="range" id="brillo" min="0" max="100" value="50">
+            </li>
+            <br>
+            <li class="funciones">🚪 Abrir y cerrar una puerta.
+    
+                <button> ABRIR/CERRAR</button>
+            </li>
+            <br>
+            <li class="funciones">☀️ Detectar la cantidad de luz ambiental.
+                <div>
+                    <p>Estado: <strong>Soleado / Iluminado</strong></p>
+                    <p>Lectura del sensor: <span>450 Lux</span></p>
+                </div>
+            </li>
+            <br>
+            <li class="funciones">💧 Medir la humedad.
+                <div>
+                    <p>Estado: <strong>Humedo / Seco</strong></p>
+                    <p>Lectura del sensor: <span>100%</span></p>
+                </div>
+            </li>
+            <br>
+            <li class="funciones">📱 Controlar el sistema desde un celular.
+                <i class="fa-slab-duo fa-regular fa-wifi"></i>
+                <p>En linea conectado</p>
+            </li>
+    
+        </ol>
+</div>
+     
 </section>
+    
+</body>
+</html>
