@@ -18,7 +18,7 @@
 <body>
  <div class="fijar_menu">
         <nav>
-            <img src="imagenes/Gemini_Generated_Image_5322175322175322-removebg-preview.png" alt="logo" class="logo">
+            <a href="index.html"><img src="imagenes/Gemini_Generated_Image_5322175322175322-removebg-preview.png" alt="logo" class="logo"></a>
             <ul class="menu">
                 <li><a href="">PROBLEMA</a></li>
                 <li><a href="">SOLUCION</a></li>
@@ -33,20 +33,20 @@
 <div class="container_blur"></div>
 <section class="primera_seccion">
 <div class="contenido">
-            <ol id="titulo_inicial">Nuestra idea</ol>
+    <ol id="titulo_inicial">Nuestra idea</ol>
     <h2>¿Que queremos construir?</h2>
         <p>Queremos construir una casa domotica inteligente controlada mendiante un celular y conectada por Wi-Fi a una ESP32</p>
         <p>la casa tendra diferentes componentes que permitan controlar y monitorear algunas funciones:</p>
         <ol>
             <li class="funciones">💡 Encender y apagar luces.
-                <button> ON/OFF </button>
+                <button class="btn"> ON/OFF </button>
                 <label for="brillo">Intensidad:</label>
-                <input type="range" id="brillo" min="0" max="100" value="50">
+                <input  type="range" id="brillo" min="0" max="100" value="50">
             </li>
             <br>
             <li class="funciones">🚪 Abrir y cerrar una puerta.
     
-                <button> ABRIR/CERRAR</button>
+                <button class="btn"> ABRIR/CERRAR</button>
             </li>
             <br>
             <li class="funciones">☀️ Detectar la cantidad de luz ambiental.
@@ -67,10 +67,110 @@
                 <i class="fa-slab-duo fa-regular fa-wifi"></i>
                 <p>En linea conectado</p>
             </li>
-    
         </ol>
+    <h2>¿Por que escogimos esta idea?</h2>
+    <p>Escogimos esta idea porque nos interesa la tecnología, la programación y el Internet de las Cosas (IoT).</p>
+    <p>ademas, una casa inteigente nos permite combinar varias cosas en un solo proyecto.</p>
+    <p><strong>Prgramacion + electronica + sensores + Wi-Fi + pagina web</strong></p>
+    <h2>¿Que problama queremos resolver?</h2>
+    <p>Queremos solucionar algunas situaciones comunes en una casa.</p>
+    <ul>
+        <li>Dejar luces encendidad cuando no son necesarias</li>
+        <li>No saber si una puerta esta habierta o esta cerrada</li>
+        <li>No tener una forma sencilla de controlar algunos elementos del hogar</li>
+        <li>No poder monitorear facilmente condiciones como la humedad o la iluminacion</li>
+    </ul>
+    <p>Nuestra propuesta busca hacer estas tareas <strong>mas comodas, automatizadas y controlables.</strong></p>
 </div>
      
+</section>
+<section class="segunda_seccion">
+    <article class="informacion1">
+        <h2>¿Que investigamos?</h2>
+        <p><strong>¿Que necesitamos aprender?</strong></p>
+        <p>Para poder realizar este proyecto necesitamos aprender sobre:</p>
+        <ul>
+            <li>¿Que es una <strong>ESP32</strong>?</li>
+            <li>¿Como funciona el protocolo Wi-Fi?</li>
+            <li>¿Como conectar sensores?</li>
+            <li>¿Como controlar un <strong>servomotor</strong>?</li>
+            <li>¿Como controlar LEDs?</li>
+            <li>¿Como funciona una <strong>una fotocelda/LDR</strong></li>
+            <li>¿Como medir la humedad?</li>
+            <li>¿Como crear una pagina web? con <strong>HTML, CSS y JavaScript</strong></li>
+            <li>¿Como hacer que la pagina web se comunique con la ESP32?</li>
+        </ul>
+    </article>
+    <article class="informacion2">
+        <p><strong>¿Que  informacion encontramos?</strong></p>
+        <p>Encotramos que la ESP32 puede funcionar como <strong>el cerebro de nuestro proyecto</strong> recibiend informacion de sensores y controlando diferentes omponentes.</p>
+        <br>
+        <p>tambien investigamos como utilizar:</p>
+        <ul>
+            <li>ESP32→ controlador</li>
+            <li>LDR→ sensor de luz</li>
+            <li>sensor de humedad→ medicion ambiental</li>
+            <li>LEDs → iluminacion</li>
+            <li>servomotor → control de movimiento</li>
+            <li>Wi-Fi → comunicacion</li>
+            <li>HTML, CSS y JavaScript → pagina web</li>
+        </ul>
+        <strong>Fuentes consultadas:</strong>
+        <ul>
+            <li>https://www.arduino.cc/</li>
+            <li>https://docs.espressif.com/projects/esp-idf/en/latest/</li>
+            <li>https://developer.mozilla.org/es/docs/Web/HTML</li>
+            <li>https://developer.mozilla.org/es/docs/Web/CSS</li>
+            <li>https://developer.mozilla.org/es/docs/Web/JavaScript</li>
+        </ul>
+    </article>
+</section>
+<section class="tercera_seccion">
+    <h2>Nuestro diseño</h2>
+    <p>El proyecto estara reprensentado como una pequeña casa dividida en diferentes espacios:</p>
+    <img  class="boceto" src="imagenes/boceto.png" alt="boceto proyecto">
+    <div class="contenedores">
+        <p>La <strong>ESP32 estara conectada a los sensores y actuadores de la casa</strong></p>
+        <p><strong>¿como imaginamos la casa?</strong></p>
+        <p>Queremos una casa con apariencia <strong>moderna y tecnologica.</strong></p>
+        <p>la pagina web tendra un concepto visual:</p>
+        <ul>
+            <li>🌑 Fondo oscuro.</li>
+            <li>🧊 Glassmorphism.</li>
+            <li>🟣 Violeta.</li>
+            <li>🔵 Cyan.</li>
+            <li>✨ Efectos de iluminación.</li>
+            <li>🤖 Diseño futurista.</li>
+            <li>📱 Interfaz adaptable a celular.</li>
+        </ul>
+    </div >
+    <div class="contenedores">
+            <p><strong>¿Que queremos que haga?</strong></p>
+            <p>Queremos que pueda :</p>
+            <article class="manual">
+                <p><strong>control manual:</strong></p>
+                <p>📱 CELULAR </p>
+                <p>↓</p>
+                <p>Wi-Fi</p>
+                <p>↓</p>
+                <p>ESP32</p>
+                <p>↙   ↘</p> 
+                <p>💡 Luz  🚪 Puerta</p>
+            </article>
+            <article class="automatico">
+                <p><strong>Control automatico</strong></p>
+                <p>☀️ LDR </p>
+                <p> ↓</p>
+                <p>ESP32</p>
+                <p> ↓</p>
+                <p>¿Está oscuro?</p>
+                <p>↙       ↘</p>
+                <p>SÍ        NO</p>
+                <p>↓         ↓</p> 
+                <p>💡 ON     💡 OFF</p>
+            </article>
+    </div>
+
 </section>
     
 </body>
