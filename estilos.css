@@ -495,3 +495,118 @@ p {
     font-weight: 400;
     font-style: normal;
 } */
+
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    padding: 10px;
+  }
+
+  nav img.logo{
+    width: 50%;
+    height: 20%;
+    align-content: flex-start;
+    position: relative;
+   margin-left: -25px;
+  }
+
+
+  nav button.btn {
+    position: static;
+  }
+
+  nav ul.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0;
+    padding:0;
+  }
+
+   main.principal{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+   }
+
+   main h1{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+   }
+
+   main.descripcion1{
+    display:flex;
+    flex-direction:column;
+    gap: 12px;
+   }
+
+   main a,
+   main img{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+   }
+   main.principal > img {
+  position: static;
+  display: block;
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  align-self: center;
+}
+
+   main.letra1{
+    display:flex;
+    flex-direction: column;
+    gap: 12px;
+ }
+
+.moradito {
+    padding: 40px 18px;
+  }
+
+  .contenido-problema {
+    flex-direction: column;
+  }
+
+  .problemas {
+    flex-direction: column;
+  }
+
+  .solucion{
+    height: 1020px;  
+  }
+  }
+   .solucion_efectos {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+
+  }
+
+  .solucion_contenido{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 200;
+  }
+  .modos{
+    display: flex;
+    flex-direction: column;
+    }
+
+.componentes{
+    display: flex;
+    flex-direction: column;
+}
+.componentes img{
+    width: 100%;
+    height: auto;
+}
+

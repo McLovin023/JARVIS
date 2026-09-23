@@ -172,6 +172,199 @@
     </div>
 
 </section>
+<section>
+    <h2>Materiales</h2>
+        <table>
+
+             <thead>
+                <tr>
+                    <th>Componente</th>
+                    <th>¿Para qué lo utilizaremos?</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>🧠 ESP32</td>
+                    <td>Controlar todo el proyecto y conectarlo por Wi-Fi</td>
+                </tr>
+                <tr>
+                    <td>🚪 Servomotor</td>
+                    <td>Abrir y cerrar la puerta</td>
+                </tr>
+                <tr>
+                    <td>💡 LEDs</td>
+                    <td>Representar las luces de la casa</td>
+                </tr>
+                <tr>
+                    <td>🌟 LDR / Fotocelda</td>
+                    <td>Detectar la iluminación ambiental</td>
+                </tr>
+                <tr>
+                    <td>💧 Sensor de humedad</td>
+                    <td>Medir la humedad</td>
+                </tr>
+                <tr>
+                    <td>🔌 Protoboard</td>
+                    <td>Montar las conexiones</td>
+                </tr>
+                <tr>
+                    <td>➖ Resistencias</td>
+                    <td>Proteger y controlar la corriente de los LEDs y sensores</td>
+                </tr>
+                <tr>
+                    <td>📎 Cables Dupont</td>
+                    <td>Realizar las conexiones</td>
+                </tr>
+                <tr>
+                    <td>🔋 Cable USB / fuente</td>
+                    <td>Alimentar la ESP32</td>
+                </tr>
+                <tr>
+                    <td>🏠 Cartón / material para maqueta</td>
+                    <td>Construir la casa</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Componentes principales</h3>
+            <p>Los podemos dividir en:</p>
+        <h3>Controlador</h3>
+            <ul>
+                <li>ESP32</li>
+            </ul>
+        <h3>Sensores</h3>
+            <ul>
+                <li>LDR</li>
+                <li>Sensores de humedad</li>
+            </ul>
+        <h3>Actuadores</h3>
+            <ul>
+                <li>LEDs</li>
+                <li>Servomotor</li>
+            </ul>
+        <h3>Conexion</h3>
+            <ul>
+                <li>Protoboard</li>
+                <li>Resistencias</li>
+                <li>Cables</li>
+                <li>Alimentación</li>
+            </ul>
+</section>
+<section>
+    <h2>Construcción</h2>
+        <h3>¿Cómo comenzamos</h3>
+        <p>
+            Primero diseñamos el funcionamiento de la casa y decidimos qué componentes necesitábamos.
+            <br>
+            Después realizamos pruebas individuales antes de construir todo el sistema.
+        </p>
+        <h3>Pasos realizados</h3>
+        <ol>
+            <li>Diseñar la maqueta</li>
+                <p>Construir la estructura de la casa y definir dónde estará cada habitación.</p>
+            <li>Probar la ESP32</li>
+                <p>Comprobar que la ESP32 pueda programarse correctamente.</p>
+            <li>Conectar los LEDs</li>
+                <p>Programar el encendido y apagado de las luces.</p>
+            <li>Conectar el servomotor</li>
+                <p>Programar diferentes posiciones para representar:</p>
+                    <li>🔓 Puerta abierta</li>
+                    <li>🔒 Puerta cerrada</li>
+            <li>Conectar el LDR</li>
+                <p>Leer la cantidad de luz existente.</p>
+            <li>Conectar el sensor de humedad</li>
+                <p>Obtener el valor de humedad.</p>
+            <li>Crear la página web</li>
+                <p>Diseñar el dashboard de VIERNES utilizando:</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+            <li>Conectar la página con la ESP32</li>
+                <p>Hacer que los controles de la página puedan enviar instrucciones a la ESP32 mediante Wi-Fi.</p>
+        </ol>
+</section>
+<section>
+    <h2>Pruebas y cambios</h2>
+
+    <h3>¿Qué probamos?</h3>
+        <p>
+            Probamos cada componente por separado y posteriormente intentamos integrarlos.
+            <br>
+            Por ejemplo:
+        </p>
+        <ul>
+            <li>Encender y apagar LEDs.</li>
+            <li>Mover el servomotor.</li>
+            <li>Leer el LDR.</li>
+            <li>Leer humedad.</li>
+            <li>Conectar la ESP32 al Wi-Fi.</li>
+            <li>Probar los botones de la página web.</li>
+        </ul>
+
+    <h3>¿Qué funcionó?</h3>
+        <p>
+            Los componentes que funcionen correctamente deben registrarse aquí.
+            <br>
+            Por ejemplo:
+        </p>
+            <li>"El LED respondió correctamente a las instrucciones de la ESP32."</li>
+            <li>"El servomotor pudo cambiar entre las posiciones de puerta abierta y cerrada."</li>
+    
+    <h3>¿Qué problemas encontramos?</h3>
+        <p>
+            Aquí deben colocar los problemas que realmente les hayan ocurrido.
+            <br>
+            Algunos ejemplos posibles:
+        </p>
+        <ul>
+            <li>Conexiones incorrectas.</li>
+            <li>Lecturas incorrectas del sensor.</li>
+            <li>El servo no tenía suficiente alimentación.</li>
+            <li>Problemas de conexión Wi-Fi.</li>
+            <li>Errores en el código.</li>
+            <li>La página no enviaba correctamente las instrucciones.</li>
+        </ul>
+    <h3>¿Qué cambiamos?</h3>
+        <p>
+            Explicar cómo solucionaron cada problema.
+            <br>
+            Ejemplo:
+        </p>
+        <li>"Revisamos las conexiones y modificamos el código para corregir la lectura del sensor."</li>
+        <li>"Modificamos el diseño de la página para que los botones fueran más fáciles de utilizar."</li>    
+</section>
+<section>
+    <h2>Resultado</h2>
+    <h3>¿Cómo quedó el proyecto?</h3>
+        <p>
+            Al finalizar tendremos una maqueta de una casa inteligente controlada mediante una ESP32 y una interfaz web.
+            <br>
+            La página permitirá visualizar y controlar diferentes elementos de la casa.
+        </p>
+    <h3>¿Qué puede hacer?</h3>
+        <p>Nuestro proyecto puede:</p>
+        <ol>
+            <li>💡 Controlar las luces.</li>
+            <li>🚪 Controlar la puerta.</li>
+            <li>☀️ Detectar iluminación.</li>
+            <li>💧 Mostrar humedad.</li>
+            <li>📡 Utilizar Wi-Fi.</li>
+            <li>📱 Recibir instrucciones desde el celular.</li>
+            <li>🤖 Ejecutar funciones automáticas.</li>
+        </ol>
+    <h3>¿Logra solucionar el problema?</h3>
+        <p>
+           Sí, parcialmente.
+           <br> 
+           El proyecto demuestra cómo la domótica puede facilitar algunas tareas del hogar mediante sensores, automatización y control remoto.
+           <br>
+           Además, permite comprender cómo funciona un sistema IoT, donde los dispositivos pueden comunicarse y ser controlados mediante una red.
+        </p>
+        
+</section>
     
 </body>
 </html>
