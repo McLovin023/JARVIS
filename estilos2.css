@@ -246,3 +246,42 @@ transition: 0.3s;
 .btn:hover{
     transform:scale(1.1)
 }
+
+
+/* sunda parte joan */
+
+.componentes{
+    background-color: rgba(0, 255, 255, 0.178);
+    width: 100%;
+    height: 1200px;
+    position: relative;
+    background-image: url(imagenes/Gemini_Generated_Image_sjjbqysjjbqysjjb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 1;
+
+}
+.componentes{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.parallax{
+    background-color: rgba(19, 18, 18, 0.589);
+    width: 100%;
+    height: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    backdrop-filter: blur(2px);
+}
+.componentes h2, li, p {
+    color: white;
+}
+
+table, p, h3{
+    font-family: 'Electrolize', sans-serif;
+}
