@@ -265,7 +265,7 @@ transition: 0.3s;
 .componentes{
     display: flex;
     flex-direction: column;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .parallax{
@@ -279,9 +279,15 @@ transition: 0.3s;
     backdrop-filter: blur(2px);
 }
 .componentes h2, li, p {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
-table, p, h3{
+table, td, th{
+    font-family: 'Electrolize', sans-serif;
+    margin: 0 auto;
+    border: 2px solid black;
+    box-shadow: 0px 7px 5px 0px black;
+}
+p, h3{
     font-family: 'Electrolize', sans-serif;
 }

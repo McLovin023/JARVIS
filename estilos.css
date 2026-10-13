@@ -364,6 +364,7 @@ section{
 
 .modos {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 80px;
     margin-right: 40px;
@@ -594,12 +595,7 @@ p {
     display: flex;
     flex-direction: column;
     position: relative;
-    z-index: 200;
-  }
-  .modos{
-    display: flex;
-    flex-direction: column;
-    }
+    z-index: 200;}
 
 .componentes{
     display: flex;
