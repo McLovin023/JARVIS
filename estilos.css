@@ -157,7 +157,7 @@ img{
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Audiowide', cursive;
-     transition: 0.3s;
+    transition: 0.3s;
     box-shadow:2px 2px 5px black;
     width: 200px;
 }
