@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos_interfaz.css">
     <title>J.A.R.V.I.S</title>
 </head>
@@ -30,7 +33,7 @@
     </main>
     <div class="sobre-sombra"></div>
     <section class="bar-status">
-        <p>Esp-32 / All versions</p>
+        <p class="nombre">Esp-32 / All versions</p>
         <p>modo operacional/ no simulacion </p>
         <p>punto de acceso :</p>
     </section>
@@ -40,15 +43,15 @@
         <img src="imagenes/logo-IA.png" alt="interfaz">
         <p class="texto_inferior">Monitoreo determinista de registros GPIO en tiempo real, Algoritmo de orquestación residencial con redundancia de hardware local y fallback de emergencia.</p>
     </section>
-    <section>
-        <div Class="modulos">
-            <p><strong>MODULOS DE AUTOMATIZACION DE CAMPO</strong>[I / O register matrix]</p>
-            <p>GPIO VOLTAGE: 3.3V LVTTL</p>
-        </div>
+    <div Class="modulos">
+        <p><strong>MODULOS DE AUTOMATIZACION DE CAMPO</strong>[I / O register matrix]</p>
+        <p>GPIO VOLTAGE: 3.3V LVTTL</p>
+    </div>
+    <section class="indicadores">
         <article class="modulo-iluminacion">
             <img src="" alt="icono de modulo">
             <p><strong>ILUMINACION</strong>MODULO 02 // RELAYS</p>
-            <div> 3 CANALES</div>
+            <div> <P>3 CANALES</P></div>
             <div class="contenedor-partes-casa">
                 <button class="partes-casa" type="button" aria-pressed="false">
                     <img src="" alt="sala">
@@ -72,16 +75,67 @@
         <article class="modulo-iluminacion">
             <img src="" alt="logo puertas">
             <p><strong>ACCESOS A PUERTAS</strong>MODULO B2 // SERVO PWM</p>
-            <div>[GPIO 18]</div>
+            <div><P>[GPIO 18]</P></div>
             <div class = "candado">
-                <img src="" alt="logo candado">
-                <p><strong>ABIERTA</strong></p>
+                <img class="logo-candado" src="" alt="logo candado">
+                <p class="indicador"><strong>ABIERTA</strong></p>
                 <p>Servo Angulo: 90°</p>
             </div>
-            <button></button>
-
+            <button>🔓 CERRADA</button>
+            <button>🔒 ABIERTA</button>
+            <p>FREQ: 50Hz</p>
+            <p>SG90 CALIBRADO</p>
+        </article>
+        <article class="modulo-iluminacion">
+            <img src="" alt="logo riego">
+            <p><strong>RIEGO INTELIGENTE</strong>MODULO B3 // SENSOR + BOMBA</p>
+            <div><P>[ADC: GPIO 34]</P></div>
+            <div>
+                <p>HUMEDAD DEL SUELO</p>
+                <div><p>SUELO HUMEDO</p></div>
+                <p class="porcentaje"><strong>68%</strong></p>
+                <p>UMBRAL: 2700/4095</p>
+                <div class="barra" role="progressbar"
+                    aria-valuemin="0" aria-valuemax="100" aria-valuenow="65">
+                    <div class="relleno" id="relleno"></div>
+                </div>
+            </div>
+            <div>
+                <p><strong>BOMBA DE AGUA (LED)</strong></p>
+                <p>[GPIO 19]</p>
+                <p>ESTADO:</p>
+                <p>DESACTIVADO</p>
+                <button>ACTIVAR</button>
+                <button>DESACTIVAR</button>
+            </div>
+            <p>MODO: HIBRIDO AUTO</p>
+        </article>
+        <article class="modulo-iluminacion">
+            <img src="" alt="logo telemtria">
+            <p><strong>TELEMETRIA GLOBAL</strong>MODULO D4 // DIAGNOSTICO</p>
+            <div class="TELEMETRIA">
+                <p>ESP32 HARDWARE</p>
+                <p>🛜 CONECTADO</p>
+            </div>
+            <div class="TELEMETRIA">
+                <p>ILUMINACION</p>
+                <p>0 LUCES ON</p>
+            </div>
+            <div class="TELEMETRIA">
+                <p>ABIERTA</p>
+                <p>ABIERTA (90°)</p>
+            </div>
+            <div class="TELEMETRIA">
+                <p>BOMBA DE RIEGO</p>
+                <p>EN ESPERA</p>
+            </div>
+            <div class="TELEMETRIA">
+                <p>TENSION LOGICA</p>
+                <p>3.30 VDC</p>
+            </div>
+            <p>STABLE</p>
         </article>
     </section>
-
+ 
 </body>
 </html>
