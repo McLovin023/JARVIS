@@ -128,16 +128,39 @@ body{
 .indicadores{
     display: flex;
     flex-direction: row;
-    gap: ;
+    gap: 20px;
+    margin: 0 66px;          /* mismo margen que .modulos, deja espacio a la derecha */
+    box-sizing: border-box;
 }
 
-/* Controles de iluminación por espacio */
 .modulo-iluminacion{
-    border: solid;
-    padding: 60px;
-    margin-left: 64px;
-    margin-right: 64px;
+    flex: 1 1 0;             /* las 4 tarjetas se reparten el ancho disponible */
+    min-width: 0;            /* evita que el contenido las empuje fuera de la página */
+    box-sizing: border-box;
+    padding: 24px;           /* antes 60px, era demasiado para 4 columnas */
+    margin: 0;               /* quitamos el margin-left: 64px y el margin-right: -57px */
     border-radius: 20px;
+    background-color: #192030;
+}
+.encabezado{
+    display: flex;
+}
+.encabezado p{
+    margin: 0;
+
+}
+   .pines{
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background-color: rgba(0, 210, 255, 0.08);
+    border: 1px solid rgba(0, 210, 255, 0.25);
+    color: #00d2ff;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 .partes-casa{
     display: flex;

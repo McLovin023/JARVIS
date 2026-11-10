@@ -49,18 +49,16 @@
     </div>
     <section class="indicadores">
         <article class="modulo-iluminacion">
-            <img src="" alt="icono de modulo">
-            <p><strong>ILUMINACION</strong>MODULO 02 // RELAYS</p>
-            <div> <P>3 CANALES</P></div>
+            <div  class="encabezado">
+             <img src="" alt="icono de modulo">
+            <p><strong>ILUMINACION</strong>MODULO 02 // RELAYS</p>   
+            <div class = "pines"><P>3 CANALES</P></div>
+            </div>
+            
             <div class="contenedor-partes-casa">
                 <button class="partes-casa" type="button" aria-pressed="false">
                     <img src="" alt="sala">
                     <p><strong>Sala Principal</strong>[PIN: GPIO 22]</p>
-                    <span>OFF/ON</span>
-                </button>
-                <button class="partes-casa" type="button" aria-pressed="false">
-                    <img src="" alt="cocina">
-                    <p><strong>Cocina</strong>[PIN: GPIO 23]</p>
                     <span>OFF/ON</span>
                 </button>
                 <button class="partes-casa" type="button" aria-pressed="false">
@@ -70,12 +68,14 @@
                 </button>
             </div>
             <p>STATUS: <strong>0 ACTIVAS</strong></p>
-            <p>APAGAR TODO</p>
+            <button>APAGAR TODO</button>
         </article>
         <article class="modulo-iluminacion">
+            <div class="encabezado">
             <img src="" alt="logo puertas">
             <p><strong>ACCESOS A PUERTAS</strong>MODULO B2 // SERVO PWM</p>
-            <div><P>[GPIO 18]</P></div>
+            <div class = "pines"><P>[GPIO 18]</P></div>
+            </div>
             <div class = "candado">
                 <img class="logo-candado" src="" alt="logo candado">
                 <p class="indicador"><strong>ABIERTA</strong></p>
@@ -87,9 +87,12 @@
             <p>SG90 CALIBRADO</p>
         </article>
         <article class="modulo-iluminacion">
-            <img src="" alt="logo riego">
-            <p><strong>RIEGO INTELIGENTE</strong>MODULO B3 // SENSOR + BOMBA</p>
-            <div><P>[ADC: GPIO 34]</P></div>
+            <div class="encabezado">
+             <img src="" alt="logo riego">
+            <p><strong>RIEGO INTELIGENTE</strong>MODULO B3 // SENSOR + BOMBA</p>   
+            <div class = "pines"><P>[ADC: GPIO 34]</P></div>
+            </div>
+            
             <div>
                 <p>HUMEDAD DEL SUELO</p>
                 <div><p>SUELO HUMEDO</p></div>
@@ -111,8 +114,11 @@
             <p>MODO: HIBRIDO AUTO</p>
         </article>
         <article class="modulo-iluminacion">
-            <img src="" alt="logo telemtria">
-            <p><strong>TELEMETRIA GLOBAL</strong>MODULO D4 // DIAGNOSTICO</p>
+            <div class="encabezado">
+                <img src="" alt="logo telemtria">
+                <p><strong>TELEMETRIA GLOBAL</strong>MODULO D4 // DIAGNOSTICO</p>
+                
+            </div>
             <div class="TELEMETRIA">
                 <p>ESP32 HARDWARE</p>
                 <p>🛜 CONECTADO</p>
